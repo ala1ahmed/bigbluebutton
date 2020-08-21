@@ -7,12 +7,12 @@ public:
     listenOnlyMode: true
     forceListenOnly: false
     skipCheck: false
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+    clientTitle: Taderok
+    appName: Taderok SESSION APP
     bbbServerVersion: 2.2-dev
-    copyright: "©2019 BigBlueButton Inc."
+    copyright: "©2019 Taderok Inc."
     html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    helpLink: https://taderok.com
     lockOnJoin: true
     cdn: ""
     basename: "/html5client"
