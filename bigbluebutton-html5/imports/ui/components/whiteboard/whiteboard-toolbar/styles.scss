@@ -59,6 +59,7 @@
   .buttonWrapper > .toolbarButton {
     outline-offset: var(--toolbar-item-outline-offset);
     border-bottom: var(--toolbar-button-border) solid var(--toolbar-button-border-color);
+    border-radius: 20px;
   }
 
   .buttonWrapper:first-child > .toolbarButton {
