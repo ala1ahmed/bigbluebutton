@@ -125,7 +125,6 @@
 
 .toolbarButton {
   padding: 0;
-  border: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -139,7 +138,6 @@
   font-size: var(--toolbar-button-font-size);
   color: var(--toolbar-button-color);
   background-color: var(--toolbar-button-bg);
-  border-color: var(--toolbar-button-border-color);
 
   &:focus,
   &:hover {
@@ -177,19 +175,7 @@
     left: var(--toolbar-button-height);
   }
 
-  .buttonWrapper:first-child > .toolbarListButton {
-    border-top-left-radius: var(--toolbar-button-border-radius);
-    border-bottom-left-radius: var(--toolbar-button-border-radius);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
 
-    [dir="rtl"] & {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: var(--toolbar-button-border-radius);
-      border-bottom-right-radius: var(--toolbar-button-border-radius);
-    }
-  }
 }
 
 .toolbarListButton {
