@@ -168,14 +168,20 @@
   right: var(--toolbar-button-height);
   left: auto;
   top: 0;
-  box-shadow: var(--toolbar-box-shadow);
+  //box-shadow: var(--toolbar-box-shadow);
   border-radius: 20px;
   [dir="rtl"] & {
     right: auto;
     left: var(--toolbar-button-height);
   }
 
+  .buttonWrapper:first-child > .toolbarListButton {
+    border-radius: 20px;
 
+    [dir="rtl"] & {
+      border-radius: 20px;
+    }
+  }
 }
 
 .toolbarListButton {
