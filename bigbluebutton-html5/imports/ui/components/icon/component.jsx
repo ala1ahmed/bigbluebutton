@@ -19,7 +19,7 @@ const Icon = ({
   ...props
 }) => (
   <i
-    className={cx(className, [prependIconName, iconName].join(''))}
+    className={cx([prependIconName, iconName].join(''))}
     // ToastContainer from react-toastify passes a useless closeToast prop here
     {..._.omit(props, 'closeToast')}
   />
