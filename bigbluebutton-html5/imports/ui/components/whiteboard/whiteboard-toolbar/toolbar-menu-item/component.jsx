@@ -76,7 +76,6 @@ export default class ToolbarMenuItem extends Component {
       icon,
       customIcon,
       onBlur,
-      color,
       className,
       children,
       showCornerTriangle,
@@ -90,7 +89,6 @@ export default class ToolbarMenuItem extends Component {
         <Button
           hideLabel
           role="button"
-          color={color || "default"}
           size="md"
           label={label}
           icon={icon || null}

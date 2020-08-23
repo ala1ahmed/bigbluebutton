@@ -451,7 +451,6 @@ class WhiteboardToolbar extends Component {
           icon="hand"
           label={intl.formatMessage(intlMessages.toolbarItemPan)}
           onItemClick={() => { }}
-          color={colorSelected}
           className={styles.toolbarButton}
         />
       ) : (
@@ -462,7 +461,6 @@ class WhiteboardToolbar extends Component {
           onItemClick={this.displaySubMenu}
           objectToReturn="annotationList"
           onBlur={this.closeSubMenu}
-          color={colorSelected}
           className={cx(styles.toolbarButton, currentSubmenuOpen === 'annotationList' ? styles.toolbarActive : null)}
         >
           {currentSubmenuOpen === 'annotationList' && annotations.length > 1
