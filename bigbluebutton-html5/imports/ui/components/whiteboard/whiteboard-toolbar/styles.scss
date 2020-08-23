@@ -166,6 +166,7 @@
   justify-content: center;
   height: var(--toolbar-button-height);
   position: absolute;
+  background-color: transparent !important;
   right: var(--toolbar-button-height);
   left: auto;
   top: 0;
