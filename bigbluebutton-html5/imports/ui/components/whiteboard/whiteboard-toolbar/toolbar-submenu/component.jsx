@@ -90,7 +90,7 @@ class ToolbarSubmenu extends Component {
     if (type === 'color') {
       return (
         <svg className={styles.customSvgIcon}>
-          <rect x="20%" y="20%" width="60%" height="60%" fill={obj.value} />
+          <rect x="20%" y="20%" ry="10%" rx="10%" width="60%" height="60%" fill={obj.value} />
         </svg>
       );
     } if (type === 'thickness') {
