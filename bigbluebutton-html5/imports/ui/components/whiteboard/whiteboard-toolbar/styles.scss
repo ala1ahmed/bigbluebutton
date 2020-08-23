@@ -191,10 +191,10 @@
   align-items: center;
   justify-content: center;
   font-size: var(--toolbar-button-font-size);
-  background-color: var(--toolbar-list-bg);
+  background-color: transparent !important;
   border: 0 !important;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 20px;
   padding: initial;
   outline-offset: var(--toolbar-item-outline-offset);
 
