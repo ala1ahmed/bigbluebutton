@@ -681,18 +681,18 @@ class WhiteboardToolbar extends Component {
     } = this.state;
 
     return (
-      <svg className={styles.customSvgIcon} shapeRendering="geometricPrecision">
+      <svg className={styles.customSvgIcon}>
         {isEdge
           ? (
-            <circle
-              cx="25%"
-              cy="25%"
-              r="18px"
+            <rect
+              x="25%"
+              y="25%"
+              width="50%"
+              height="50%"
               fill={colorSelected.value}
-              shapeRendering="geometricPrecision"
             />
           ) : (
-            <circle cx="25%" cy="25%" r="18px" shapeRendering="geometricPrecision" >
+            <rect x="25%" y="25%" width="50%" height="50%" stroke="black" strokeWidth="1">
               <animate
                 ref={(ref) => { this.colorListIconColor = ref; }}
                 attributeName="fill"
@@ -704,7 +704,7 @@ class WhiteboardToolbar extends Component {
                 repeatCount="1"
                 fill="freeze"
               />
-            </circle>
+            </rect>
           )
         }
       </svg>
