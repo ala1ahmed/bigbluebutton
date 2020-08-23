@@ -59,7 +59,6 @@
   .buttonWrapper > .toolbarButton {
     outline-offset: var(--toolbar-item-outline-offset);
     border-bottom: var(--toolbar-button-border) solid var(--toolbar-button-border-color);
-    border-radius: 20px;
   }
 
   .buttonWrapper:first-child > .toolbarButton {
@@ -171,7 +170,7 @@
   left: auto;
   top: 0;
   box-shadow: var(--toolbar-box-shadow);
-
+  border-radius: 20px;
   [dir="rtl"] & {
     right: auto;
     left: var(--toolbar-button-height);
@@ -200,10 +199,9 @@
   justify-content: center;
   font-size: var(--toolbar-button-font-size);
   background-color: var(--toolbar-list-bg);
-  opacity: 0.7;
   border: 0 !important;
   box-shadow: none;
-  border-radius: 20px;
+  border-radius: 0;
   padding: initial;
   outline-offset: var(--toolbar-item-outline-offset);
 
