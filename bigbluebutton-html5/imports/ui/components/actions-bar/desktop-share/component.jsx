@@ -167,7 +167,7 @@ const DesktopShare = ({
         label={intl.formatMessage(vLabel)}
         description={intl.formatMessage(vDescr)}
         color={isVideoBroadcasting ? 'primary' : 'default'}
-        ghost={!isVideoBroadcasting}
+        
         hideLabel
         circle
         size="lg"
