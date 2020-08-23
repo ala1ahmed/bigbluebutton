@@ -90,7 +90,7 @@ export default class ToolbarMenuItem extends Component {
         <Button
           hideLabel
           role="button"
-          color={color | "default"}
+          color={color || "default"}
           size="md"
           label={label}
           icon={icon || null}
