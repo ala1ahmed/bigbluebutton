@@ -95,7 +95,7 @@ class AudioControls extends PureComponent {
             />
           ) : null}
         <Button
-          className={cx(styles.button, inAudio || styles.btn)}
+          className={styles.button}
           onClick={inAudio ? handleLeaveAudio : handleJoinAudio}
           disabled={disable}
           hideLabel
@@ -103,8 +103,7 @@ class AudioControls extends PureComponent {
             : intl.formatMessage(intlMessages.joinAudio)}
           label={inAudio ? intl.formatMessage(intlMessages.leaveAudio)
             : intl.formatMessage(intlMessages.joinAudio)}
-          color={inAudio ? 'primary' : 'default'}
-          ghost={!inAudio}
+          color={inAudio ? 'success' : 'danger'}
           icon={joinIcon}
           size="lg"
           circle
