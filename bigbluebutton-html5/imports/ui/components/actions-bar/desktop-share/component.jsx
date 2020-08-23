@@ -168,7 +168,6 @@ const DesktopShare = ({
         description={intl.formatMessage(vDescr)}
         color={isVideoBroadcasting ? 'primary' : 'primary'}
         hideLabel
-        circle
         size="lg"
         onClick={isVideoBroadcasting ? handleUnshareScreen : () => handleShareScreen(onFail)}
         id={isVideoBroadcasting ? 'unshare-screen-button' : 'share-screen-button'}
