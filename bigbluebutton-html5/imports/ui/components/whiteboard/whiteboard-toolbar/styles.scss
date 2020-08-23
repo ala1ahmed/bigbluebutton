@@ -52,42 +52,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--toolbar-box-shadow);
+  //box-shadow: var(--toolbar-box-shadow);
   border-radius: var(--toolbar-button-border-radius);
   pointer-events: all;
 
   .buttonWrapper > .toolbarButton {
-    outline-offset: var(--toolbar-item-outline-offset);
-    border-bottom: var(--toolbar-button-border) solid var(--toolbar-button-border-color);
+    border-radius: 20px;
   }
 
   .buttonWrapper:first-child > .toolbarButton {
-    border-top-left-radius: var(--toolbar-button-border-radius);
-    border-top-right-radius: var(--toolbar-button-border-radius);
+    border-radius: 20px;
 
     &.toolbarActive {
-      border-top-left-radius: 0;
-      border-top-right-radius: var(--toolbar-button-border-radius);
+      border-radius: 20px;
 
       [dir="rtl"] & {
-        border-top-left-radius: var(--toolbar-button-border-radius);
-        border-top-right-radius: 0;
+        border-radius: 20px;
       }
     }
   }
 
   .buttonWrapper:last-child > .toolbarButton {
-    border-bottom: 0;
-    border-bottom-left-radius: var(--toolbar-button-border-radius);
-    border-bottom-right-radius: var(--toolbar-button-border-radius);
+    border-radius: 20px;
 
     &.toolbarActive {
-      border-bottom-left-radius: 0;
-      border-top-right-radius: var(--toolbar-button-border-radius);
+      border-radius: 20px;
 
       [dir="rtl"] & {
-        border-bottom-left-radius: var(--toolbar-button-border-radius);
-        border-top-right-radius: 0;
+        border-radius: 20px;
       }
     }
   }
