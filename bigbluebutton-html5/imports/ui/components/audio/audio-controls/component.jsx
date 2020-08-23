@@ -87,8 +87,7 @@ class AudioControls extends PureComponent {
                 : intl.formatMessage(intlMessages.muteAudio)}
               aria-label={muted ? intl.formatMessage(intlMessages.unmuteAudio)
                 : intl.formatMessage(intlMessages.muteAudio)}
-              color={!muted ? 'primary' : 'default'}
-              ghost={muted}
+              color={!muted ? 'success' : 'danger'}
               icon={muted ? 'mute' : 'unmute'}
               size="lg"
               circle
