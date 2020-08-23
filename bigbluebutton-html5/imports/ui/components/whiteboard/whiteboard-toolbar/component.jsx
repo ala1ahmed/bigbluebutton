@@ -687,11 +687,11 @@ class WhiteboardToolbar extends Component {
             <circle
               cx="25%"
               cy="25%"
-              r="50px"
+              r="10px"
               fill={colorSelected.value}
             />
           ) : (
-            <circle cx="25%" cy="25%" r="50px" >
+            <circle cx="25%" cy="25%" r="10px" >
               <animate
                 ref={(ref) => { this.colorListIconColor = ref; }}
                 attributeName="fill"
