@@ -687,15 +687,15 @@ class WhiteboardToolbar extends Component {
             <rect
               x="25%"
               y="25%"
-              rx="15%"
-              ry="15%"
+              rx="10%"
+              ry="10%"
               width="50%"
               height="50%"
               fill={colorSelected.value}
             />
           ) : (
-            <rect x="25%" y="25%" rx="15%"
-            ry="15%" width="50%" height="50%">
+            <rect x="25%" y="25%" rx="10%"
+            ry="10%" width="50%" height="50%" stroke="gray" strokeWidth="1">
               <animate
                 ref={(ref) => { this.colorListIconColor = ref; }}
                 attributeName="fill"
@@ -752,7 +752,7 @@ class WhiteboardToolbar extends Component {
           ? intl.formatMessage(intlMessages.toolbarMultiUserOff)
           : intl.formatMessage(intlMessages.toolbarMultiUserOn)
         }
-        icon={multiUser ? 'multi_whiteboard' : 'whiteboard'}
+        icon={multiUser ? 'user' : 'users'}
         onItemClick={this.handleSwitchWhiteboardMode}
         className={styles.toolbarButton}
       />
