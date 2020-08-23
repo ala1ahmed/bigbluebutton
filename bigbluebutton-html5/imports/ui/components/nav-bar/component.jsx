@@ -94,7 +94,6 @@ class NavBar extends PureComponent {
             <Button
               data-test="userListToggleButton"
               onClick={NavBar.handleToggleUserList}
-              ghost
               circle
               hideLabel
               label={intl.formatMessage(intlMessages.toggleUserListLabel)}

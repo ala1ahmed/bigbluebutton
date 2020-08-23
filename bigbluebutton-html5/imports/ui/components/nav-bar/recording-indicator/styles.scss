@@ -49,11 +49,11 @@
   @extend %recordingControl;
 
   padding: 7px;
-  border: var(--border-size-small) solid var(--color-white);
+  border: var(--border-size-small) solid var(--color-danger);
   
   &:focus {
     padding: 5px;
-    border: var(--border-size-large) solid var(--color-white);
+    border: var(--border-size-large) solid var(--color-danger);
     box-shadow: none;
   }
 }
@@ -63,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   font-weight: 200;
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: var(--font-size-base);
   padding: 0;
   margin-left: var(--sm-padding-x);

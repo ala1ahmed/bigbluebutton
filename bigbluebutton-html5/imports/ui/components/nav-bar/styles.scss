@@ -43,7 +43,7 @@
 
 .presentationTitle {
   font-weight: 200;
-  color: var(--color-white);
+  color: var(--color-black);
   font-size: var(--font-size-base);
   margin: 0;
   padding: 0;
@@ -85,7 +85,7 @@
   &:focus {
     span {
       background-color: transparent !important;
-      color: var(--color-white) !important;
+      color: var(--color-black) !important;
       opacity: .75;
     }
   }
