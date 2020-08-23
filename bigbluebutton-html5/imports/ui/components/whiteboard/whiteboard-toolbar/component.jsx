@@ -462,7 +462,6 @@ class WhiteboardToolbar extends Component {
           objectToReturn="annotationList"
           onBlur={this.closeSubMenu}
           className={cx(styles.toolbarButton, currentSubmenuOpen === 'annotationList' ? styles.toolbarActive : null)}
-          showCornerTriangle
         >
           {currentSubmenuOpen === 'annotationList' && annotations.length > 1
             ? (
@@ -494,7 +493,6 @@ class WhiteboardToolbar extends Component {
         objectToReturn="fontSizeList"
         onBlur={this.closeSubMenu}
         className={cx(styles.toolbarButton, currentSubmenuOpen === 'fontSizeList' ? styles.toolbarActive : null)}
-        showCornerTriangle
       >
         {currentSubmenuOpen === 'fontSizeList'
           ? (
@@ -556,7 +554,6 @@ class WhiteboardToolbar extends Component {
         onBlur={this.closeSubMenu}
         className={cx(styles.toolbarButton, currentSubmenuOpen === 'thicknessList' ? styles.toolbarActive : null)}
         customIcon={this.renderThicknessItemIcon()}
-        showCornerTriangle
       >
         {currentSubmenuOpen === 'thicknessList'
           ? (
@@ -658,7 +655,6 @@ class WhiteboardToolbar extends Component {
         onBlur={this.closeSubMenu}
         className={cx(styles.toolbarButton, currentSubmenuOpen === 'colorList' ? styles.toolbarActive : null)}
         customIcon={this.renderColorItemIcon()}
-        showCornerTriangle
       >
         {currentSubmenuOpen === 'colorList'
           ? (
