@@ -79,7 +79,7 @@ class AudioControls extends PureComponent {
         {showMute && isVoiceUser
           ? (
             <Button
-              className={cx(styles.button, !talking || styles.glow, !muted || styles.btn)}
+              className={styles.button}
               onClick={handleToggleMuteMicrophone}
               disabled={disable}
               hideLabel
