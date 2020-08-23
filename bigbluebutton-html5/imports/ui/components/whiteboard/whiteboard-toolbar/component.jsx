@@ -687,15 +687,15 @@ class WhiteboardToolbar extends Component {
             <rect
               x="25%"
               y="25%"
-              rx="3%"
-              ry="3%"
+              rx="15%"
+              ry="15%"
               width="50%"
               height="50%"
               fill={colorSelected.value}
             />
           ) : (
-            <rect x="25%" y="25%" rx="3%"
-            ry="3%" width="50%" height="50%" stroke="black" strokeWidth="1">
+            <rect x="25%" y="25%" rx="15%"
+            ry="15%" width="50%" height="50%">
               <animate
                 ref={(ref) => { this.colorListIconColor = ref; }}
                 attributeName="fill"
