@@ -684,17 +684,14 @@ class WhiteboardToolbar extends Component {
       <svg className={styles.customSvgIcon}>
         {isEdge
           ? (
-            <rect
-              x="25%"
-              y="25%"
-              width="50%"
-              height="50%"
-              stroke="black"
-              strokeWidth="1"
+            <circle
+              cx="25%"
+              cy="25%"
+              r="50px"
               fill={colorSelected.value}
             />
           ) : (
-            <rect x="25%" y="25%" width="50%" height="50%" stroke="black" strokeWidth="1">
+            <circle cx="25%" cy="25%" r="50px" >
               <animate
                 ref={(ref) => { this.colorListIconColor = ref; }}
                 attributeName="fill"
@@ -706,7 +703,7 @@ class WhiteboardToolbar extends Component {
                 repeatCount="1"
                 fill="freeze"
               />
-            </rect>
+            </circle>
           )
         }
       </svg>
