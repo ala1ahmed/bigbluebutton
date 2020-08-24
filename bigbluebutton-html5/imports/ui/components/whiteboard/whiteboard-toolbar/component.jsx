@@ -74,13 +74,13 @@ class WhiteboardToolbar extends Component {
     const { annotations, multiUser, isPresenter } = this.props;
 
     let annotationSelected = {
-      icon: 'hand',
+      icon: 'hand-paper',
       value: 'hand',
     };
 
     if (multiUser && !isPresenter) {
       annotationSelected = {
-        icon: 'pen_tool',
+        icon: 'pencil-alt',
         value: 'pencil',
       };
     }
@@ -145,7 +145,7 @@ class WhiteboardToolbar extends Component {
     if (drawSettings) {
       if (multiUser && !isPresenter) {
         drawSettings.whiteboardAnnotationTool = 'pencil';
-        this.handleAnnotationChange({ icon: 'pen_tool', value: 'pencil' });
+        this.handleAnnotationChange({ icon: 'pencil-alt', value: 'pencil' });
       }
 
       this.setToolbarValues(drawSettings);
@@ -448,7 +448,7 @@ class WhiteboardToolbar extends Component {
     return panMode
       ? (
         <ToolbarMenuItem
-          icon="hand"
+          icon="hand-paper"
           label={intl.formatMessage(intlMessages.toolbarItemPan)}
           onItemClick={() => { }}
           className={styles.toolbarButton}
