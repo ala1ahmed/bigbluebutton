@@ -735,7 +735,7 @@ class WhiteboardToolbar extends Component {
       <ToolbarMenuItem
         disabled={!isMeteorConnected}
         label={intl.formatMessage(intlMessages.toolbarClearAnnotations)}
-        icon="trash-alt"
+        icon="delete"
         onItemClick={this.handleClearAll}
         className={styles.toolbarButton}
       />
@@ -752,7 +752,7 @@ class WhiteboardToolbar extends Component {
           ? intl.formatMessage(intlMessages.toolbarMultiUserOff)
           : intl.formatMessage(intlMessages.toolbarMultiUserOn)
         }
-        icon={multiUser ? 'user' : 'users'}
+        icon={multiUser ? 'multi_whiteboard' : 'whiteboard'}
         onItemClick={this.handleSwitchWhiteboardMode}
         className={styles.toolbarButton}
       />
