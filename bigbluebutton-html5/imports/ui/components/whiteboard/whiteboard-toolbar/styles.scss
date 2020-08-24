@@ -2,7 +2,7 @@
 
 :root {
   --toolbar-margin: .8rem;
-  --toolbar-box-shadow: 0 0 10px -2px rgba(0, 0, 0, .25);
+  --toolbar-box-shadow: 0 0 10px -2px rgb(169,169,169);
   --toolbar-button-color: var(--btn-default-color);
   --toolbar-button-bg: var(--btn-default-bg);
   --toolbar-button-width: 3rem;
@@ -125,7 +125,7 @@
   justify-content: center !important;
   position: relative;
   border-radius: 20px;
-  box-shadow: none !important;
+  box-shadow: var(--toolbar-box-shadow);
   z-index: 1;
   font-size: var(--toolbar-button-font-size);
   color: var(--toolbar-button-color);
