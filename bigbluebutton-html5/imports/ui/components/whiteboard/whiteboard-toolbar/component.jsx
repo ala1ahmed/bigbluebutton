@@ -74,13 +74,13 @@ class WhiteboardToolbar extends Component {
     const { annotations, multiUser, isPresenter } = this.props;
 
     let annotationSelected = {
-      icon: 'hand-paper',
+      icon: 'hand',
       value: 'hand',
     };
 
     if (multiUser && !isPresenter) {
       annotationSelected = {
-        icon: 'pencil-alt',
+        icon: 'pen_tool',
         value: 'pencil',
       };
     }
@@ -145,7 +145,7 @@ class WhiteboardToolbar extends Component {
     if (drawSettings) {
       if (multiUser && !isPresenter) {
         drawSettings.whiteboardAnnotationTool = 'pencil';
-        this.handleAnnotationChange({ icon: 'pencil-alt', value: 'pencil' });
+        this.handleAnnotationChange({ icon: 'pen_tool', value: 'pencil' });
       }
 
       this.setToolbarValues(drawSettings);

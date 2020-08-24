@@ -9,7 +9,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  prependIconName: 'fas fa-',
+  prependIconName: 'icon-bbb-',
 };
 
 const Icon = ({
