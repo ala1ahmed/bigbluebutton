@@ -376,7 +376,7 @@ class AudioModal extends Component {
               <Button
                 className={styles.audioBtn}
                 label={intl.formatMessage(intlMessages.microphoneLabel)}
-                icon="unmute"
+                icon="audio_icon_blue"
                 circle
                 size="jumbo"
                 disabled={audioLocked}
@@ -389,7 +389,7 @@ class AudioModal extends Component {
               <Button
                 className={styles.audioBtn}
                 label={intl.formatMessage(intlMessages.listenOnlyLabel)}
-                icon="listen"
+                icon="headphones_bluecolor"
                 circle
                 size="jumbo"
                 onClick={this.handleJoinListenOnly}
