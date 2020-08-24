@@ -155,7 +155,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: var(--toolbar-button-height);
+  height: auto;
   position: absolute;
   background-color: transparent !important;
   right: var(--toolbar-button-height);
