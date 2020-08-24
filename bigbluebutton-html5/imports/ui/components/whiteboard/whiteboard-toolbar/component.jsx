@@ -441,7 +441,7 @@ class WhiteboardToolbar extends Component {
   }
 
   renderToolItem() {
-    const { panMode, annotationSelected, currentSubmenuOpen ,colorSelected} = this.state;
+    const { panMode, annotationSelected, currentSubmenuOpen} = this.state;
     const { intl, annotations } = this.props;
     const isDisabled = !annotations.length;
 
@@ -735,7 +735,7 @@ class WhiteboardToolbar extends Component {
       <ToolbarMenuItem
         disabled={!isMeteorConnected}
         label={intl.formatMessage(intlMessages.toolbarClearAnnotations)}
-        icon="delete"
+        icon="trash-alt"
         onItemClick={this.handleClearAll}
         className={styles.toolbarButton}
       />

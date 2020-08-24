@@ -270,19 +270,19 @@ public:
       - value: 20
       - value: 16
       tools:
-      - icon: text_tool
+      - icon: font
         value: text
-      - icon: line_tool
+      - icon: slash
         value: line
-      - icon: circle_tool
+      - icon: circle
         value: ellipse
-      - icon: triangle_tool
+      - icon: triangle
         value: triangle
-      - icon: rectangle_tool
+      - icon: square
         value: rectangle
-      - icon: pen_tool
+      - icon: pencil-alt
         value: pencil
-      - icon: hand
+      - icon: hand-paper
         value: hand
       presenterTools:
       - text
