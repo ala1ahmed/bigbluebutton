@@ -88,7 +88,7 @@
 .icon-desktop:before {
   content: "\e914";
 }
-.icon-desktop_stop:before {
+.icon-desktop_off:before {
   content: "\e915";
 }
 .icon-download:before {
@@ -137,7 +137,7 @@
 .icon-help:before {
   content: "\e924";
 }
-.icon-icon-audio_icon_blue:before {
+.icon-audio_icon_blue:before {
   content: "\e925";
   color: #25385d;
 }
