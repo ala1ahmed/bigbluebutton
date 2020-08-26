@@ -68,6 +68,8 @@
   @extend .modal;
   padding: 1.5rem;
   min-height: 20rem;
+  max-width: 30rem;
+  border-radius: 20px;
 }
 
 .closeBtn {
