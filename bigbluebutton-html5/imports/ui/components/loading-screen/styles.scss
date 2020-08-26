@@ -70,9 +70,11 @@
 }
 
 .lds-ripple {
+  width: 100%;
+  text-align: center;
+  margin-bottom: var(--md-padding-x);
   display: inline-block;
   position: relative;
-  width: 80px;
   height: 80px;
 }
 .lds-ripple div {
