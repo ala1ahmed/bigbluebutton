@@ -292,7 +292,7 @@ class SettingsDropdown extends PureComponent {
         <DropdownTrigger tabIndex={0} accessKey={OPEN_OPTIONS_AK}>
           <Button
             label={intl.formatMessage(intlMessages.optionsLabel)}
-            icon="more"
+            icon="more_settings"
             circle
             hideLabel
             className={styles.btn}
