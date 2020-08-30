@@ -1,4 +1,3 @@
-@import "/imports/ui/stylesheets/animate.css";
 
 body{
   position: fixed;
@@ -57,6 +56,13 @@ body{
   vertical-align: middle;
   text-align: center;
   color: #0c53a0;
+}
+
+.forever {
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
 }
 
 /* Custom Animate.css */
