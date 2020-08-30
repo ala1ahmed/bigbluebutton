@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './styles.css';
 
 const LoadingScreen = ({ children }) => (
   <div className="arrow-container animated fadeInDown">
