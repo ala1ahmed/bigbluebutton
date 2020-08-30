@@ -13,9 +13,10 @@ body{
 .arrow-container{
   width: 300px;
   height: 300px;
-  margin: 1rem;
+  margin: 0 auto;
   position: absolute;
   justify-content: center;
+
   left: 0;
   right: 0;
 }
