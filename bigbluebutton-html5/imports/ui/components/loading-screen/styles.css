@@ -109,3 +109,7 @@ body{
   -webkit-animation-name: zoomIn;
           animation-name: zoomIn;
 }
+
+.container {
+  padding-top: 100px;
+}
