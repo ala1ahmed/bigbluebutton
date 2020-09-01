@@ -67,7 +67,8 @@ const UserAvatar = ({
     />
 
 
-    <div className={styles.content} style={{backgroundImage:"url(" + avatar + ")"}}>
+    <div className={styles.content}>
+      <img src={avatar} style={{flex: 1 },{objectFit:contain}}></img>
     </div>
   </div>
 );
