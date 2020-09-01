@@ -40,15 +40,15 @@ const propTypes = {
 };
 
 
-const DEFAULT_PANEL_WIDTH = 340;
+const DEFAULT_PANEL_WIDTH = 270;
 
 // Variables for resizing user-list.
 const USERLIST_MIN_WIDTH_PX = 150;
-const USERLIST_MAX_WIDTH_PX = 240;
+const USERLIST_MAX_WIDTH_PX = 270;
 
 // Variables for resizing chat.
 const CHAT_MIN_WIDTH = 150;
-const CHAT_MAX_WIDTH = 350;
+const CHAT_MAX_WIDTH = 270;
 
 // Variables for resizing poll.
 const POLL_MIN_WIDTH = 320;
