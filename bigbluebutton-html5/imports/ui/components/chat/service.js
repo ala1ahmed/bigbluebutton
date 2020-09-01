@@ -175,6 +175,7 @@ const sendGroupMessage = (message) => {
   let destinationChatId = PUBLIC_GROUP_CHAT_ID;
 
   const { fullname: senderName, userID: senderUserId } = Auth;
+  console.log(Auth);
   const receiverId = { id: chatID };
 
   if (!isPublicChat) {
