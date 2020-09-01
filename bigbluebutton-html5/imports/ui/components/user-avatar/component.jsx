@@ -67,8 +67,7 @@ const UserAvatar = ({
     />
 
 
-    <div className={styles.content}>
-      <img src={avatar}></img>
+    <div className={styles.content} style={{backgroundImage:url(avatar)}}>
     </div>
   </div>
 );
