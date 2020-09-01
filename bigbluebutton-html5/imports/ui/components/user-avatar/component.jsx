@@ -55,10 +55,6 @@ const UserAvatar = ({
       [styles.voice]: voice,
       [styles.noVoice]: noVoice && !listenOnly,
     }, className)}
-    style={{
-      backgroundColor: color,
-      color, // We need the same color on both for the border
-    }}
   >
 
     <div className={cx({

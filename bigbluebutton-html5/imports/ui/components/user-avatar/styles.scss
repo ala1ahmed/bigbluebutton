@@ -37,12 +37,13 @@
     padding-left: 0;
     padding-bottom: 0;
     color: inherit;
+    top: auto;
     left: auto;
     bottom: var(--user-indicators-offset);
     right: var(--user-indicators-offset);
     border: 1.5px solid var(--user-list-bg);
     border-radius: 50%;
-    background-color: transparent;
+    background-color: var(--user-indicator-voice-bg);
     color: var(--user-avatar-text);
     opacity: 0;
     font-family: 'bbb-icons';
@@ -175,7 +176,6 @@
 
 .content {
   color: var(--user-avatar-text);
-  top: 50%;
   position: absolute;
   text-align: center;
   left: 0;
