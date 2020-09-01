@@ -120,7 +120,7 @@
 .presenter {
   &:before {
     font-family: "icomoon";
-    content: "\e93a";
+    content: "\00a0\e93a\00a0";
   }
   @include presenterIndicator();
 }
@@ -157,14 +157,16 @@
 
 .muted {
   &:after {
-    content: "\00a0\e932\00a0";
+    font-family: "icomoon";
+    content: "\00a0\e931\00a0";
     background-color: var(--user-indicator-muted-bg);
   }
 }
 
 .listenOnly {
   &:after {
-    content: "\00a0\e90c\00a0";
+    font-family: "icomoon";
+    content: "\00a0\e928\00a0";
   }
 }
 
