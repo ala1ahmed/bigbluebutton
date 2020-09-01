@@ -68,25 +68,11 @@ export default injectIntl(withTracker(({ intl }) => {
   const amIModerator = currentUser.role === ROLE_MODERATOR;
 
   if (chatID === PUBLIC_CHAT_KEY) {
-    const { welcomeProp } = ChatService.getWelcomeProp();
 
     messages = ChatService.getPublicGroupMessages();
 
     const time = currentUser.loginTime;
 
-    const moderatorTime = time + 1;
-    const moderatorId = `moderator-msg-${moderatorTime}`;
-
-    const moderatorMsg = {
-      id: moderatorId,
-      content: [{
-        id: moderatorId,
-        text: welcomeProp.modOnlyMessage,
-        time: moderatorTime,
-      }],
-      time: moderatorTime,
-      sender: null,
-    };
 
     const messagesBeforeWelcomeMsg = ChatService.reduceAndMapGroupMessages(
       messages.filter(message => message.timestamp < time),
@@ -96,7 +82,6 @@ export default injectIntl(withTracker(({ intl }) => {
     );
 
     const messagesFormated = messagesBeforeWelcomeMsg
-      .concat(amIModerator ? moderatorMsg : [])
       .concat(messagesAfterWelcomeMsg);
 
     messages = messagesFormated.sort((a, b) => (a.time - b.time));
