@@ -103,8 +103,7 @@ const ChatListItem = (props) => {
           {!compact
             ? (
               <span className={styles.chatNameMain}>
-                {isPublicChat(chat)
-                  ? intl.formatMessage(intlMessages.titlePublic) : chat.name}
+                Chat
               </span>
             ) : null}
         </div>
