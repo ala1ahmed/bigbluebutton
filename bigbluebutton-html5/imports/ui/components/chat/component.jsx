@@ -67,7 +67,7 @@ const Chat = (props) => {
             }}
             aria-label={intl.formatMessage(intlMessages.usersTitle)}
             accessKey={HIDE_CHAT_AK}
-            label={title}
+            label={intl.formatMessage(intlMessages.usersTitle)}
             icon="left_arrow"
             className={styles.hideBtn}
           />
