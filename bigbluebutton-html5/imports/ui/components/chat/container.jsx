@@ -73,18 +73,6 @@ export default injectIntl(withTracker(({ intl }) => {
     messages = ChatService.getPublicGroupMessages();
 
     const time = currentUser.loginTime;
-    const welcomeId = `welcome-msg-${time}`;
-
-    const welcomeMsg = {
-      id: welcomeId,
-      content: [{
-        id: welcomeId,
-        text: welcomeProp.welcomeMsg,
-        time,
-      }],
-      time,
-      sender: null,
-    };
 
     const moderatorTime = time + 1;
     const moderatorId = `moderator-msg-${moderatorTime}`;
@@ -108,7 +96,6 @@ export default injectIntl(withTracker(({ intl }) => {
     );
 
     const messagesFormated = messagesBeforeWelcomeMsg
-      .concat(welcomeMsg)
       .concat(amIModerator ? moderatorMsg : [])
       .concat(messagesAfterWelcomeMsg);
 
