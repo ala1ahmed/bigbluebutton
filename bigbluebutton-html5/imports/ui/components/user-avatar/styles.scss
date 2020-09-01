@@ -119,6 +119,7 @@
 
 .presenter {
   &:before {
+    font-family: "icomoon";
     content: "\e93a";
   }
   @include presenterIndicator();
