@@ -61,10 +61,10 @@ const Chat = (props) => {
               Session.set('idChatOpen', '');
               Session.set('openPanel', 'userlist');
             }}
-            aria-label={intl.formatMessage(intlMessages.usersTitle)}
+            aria-label={intl.formatMessage(intlMessages.usersTitle,{ 0: title })}
             accessKey={HIDE_CHAT_AK}
             label={title}
-            icon="left_arrow"
+            icon="user"
             className={styles.hideBtn}
           />
         </div>
