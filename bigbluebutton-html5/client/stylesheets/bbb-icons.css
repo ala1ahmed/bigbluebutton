@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sending:before {
+  content: "\e962";
+}
 .icon-about:before {
   content: "\e900";
 }
@@ -137,7 +140,7 @@
 .icon-help:before {
   content: "\e924";
 }
-.icon-audio_icon_blue:before {
+.icon-icon-audio_icon_blue:before {
   content: "\e925";
   color: #25385d;
 }
@@ -255,7 +258,6 @@
 }
 .icon-taderok:before {
   content: "\e94b";
-  color: #ffffff
 }
 .icon-template_download:before {
   content: "\e94c";
