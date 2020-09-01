@@ -15,6 +15,7 @@ const propTypes = {
   noVoice: PropTypes.bool,
   color: PropTypes.string,
   className: PropTypes.string,
+  avatar: PropTypes.string
 };
 
 const defaultProps = {
@@ -40,6 +41,7 @@ const UserAvatar = ({
   voice,
   noVoice,
   className,
+  avatar
 }) => (
 
   <div
