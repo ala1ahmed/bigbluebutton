@@ -68,7 +68,7 @@ const UserAvatar = ({
 
 
     <div className={styles.content}>
-      <img src={avatar} style={{flex: 1 },{objectFit:contain}}></img>
+      <img src={avatar} className={styles.img}></img>
     </div>
   </div>
 );
