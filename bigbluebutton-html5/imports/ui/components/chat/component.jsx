@@ -21,6 +21,10 @@ const intlMessages = defineMessages({
     id: 'app.chat.hideChatLabel',
     description: 'aria-label for hiding chat button',
   },
+  usersTitle: {
+    id: 'app.userList.usersTitle',
+    description: 'Title for the Header',
+  }
 });
 const Chat = (props) => {
   const {
@@ -61,10 +65,10 @@ const Chat = (props) => {
               Session.set('idChatOpen', '');
               Session.set('openPanel', 'userlist');
             }}
-            aria-label={intl.formatMessage(intlMessages.usersTitle,{ 0: title })}
+            aria-label={intl.formatMessage(intlMessages.usersTitle)}
             accessKey={HIDE_CHAT_AK}
             label={title}
-            icon="user"
+            icon="left_arrow"
             className={styles.hideBtn}
           />
         </div>
