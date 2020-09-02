@@ -61,6 +61,7 @@ const mapGroupMessage = (message) => {
       color,
       isModerator: role === ROLE_MODERATOR,
       name,
+      avatar: sender.avatar,
       isOnline: connectionStatus === CONNECTION_STATUS_ONLINE,
     };
 
