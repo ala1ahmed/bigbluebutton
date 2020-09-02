@@ -116,8 +116,8 @@ class MessageListItem extends Component {
               className={styles.avatar}
               color={user.color}
               moderator={user.isModerator}
+              avatar={user.avatar}
             >
-              {user.name.toLowerCase().slice(0, 2)}
             </UserAvatar>
           </div>
           <div className={styles.content}>
