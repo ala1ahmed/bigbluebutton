@@ -255,7 +255,7 @@ public:
     typingIndicator:
       enabled: true
   note:
-    enabled: true
+    enabled: false
     url: https://session.taderok.com/pad
     config:
       showLineNumbers: false
