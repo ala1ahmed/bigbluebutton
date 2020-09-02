@@ -47,7 +47,7 @@ const mapGroupMessage = (message) => {
     const sender = Users.findOne({ userId: message.sender },
       {
         fields: {
-          color: 1, role: 1, name: 1, connectionStatus: 1,
+          color: 1, role: 1, name: 1, connectionStatus: 1, avatar: 1,
         },
       });
     const {
