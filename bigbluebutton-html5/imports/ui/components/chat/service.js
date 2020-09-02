@@ -177,7 +177,6 @@ const sendGroupMessage = (message) => {
 
   const { fullname: senderName, userID: senderUserId } = Auth;
 
-  console.log(getUser(senderUserId));
   
   const receiverId = { id: chatID };
 
@@ -198,6 +197,7 @@ const sendGroupMessage = (message) => {
     sender: {
       id: senderUserId,
       name: senderName,
+      avatar:getUser(senderUserId).avatar
     },
     message,
   };
