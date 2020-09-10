@@ -52,7 +52,7 @@
   @include inputFocus(var(--color-blue-light));
 
   flex: 1;
-  background: #fff;
+  background: #ECF3FC;
   background-clip: padding-box;
   margin: 0;
   color: var(--color-text);
@@ -64,7 +64,6 @@
   font-size: var(--font-size-base);
   min-height: 0.75rem;
   max-height: 10rem;
-  border: 1px solid var(--color-gray-lighter);
   box-shadow: 0 0 0 1px var(--color-gray-lighter);
 
   &:disabled,
@@ -81,7 +80,6 @@
   &:active,
   &:focus {
     @include highContrastOutline();
-    outline-style: solid;
     border-radius: 20px;
   }
 }
