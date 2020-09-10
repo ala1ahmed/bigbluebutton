@@ -61,7 +61,10 @@
   resize: none;
   transition: none;
   border-radius: 20px;
-  outline: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
   font-size: var(--font-size-base);
   min-height: 0.75rem;
   max-height: 10rem;
