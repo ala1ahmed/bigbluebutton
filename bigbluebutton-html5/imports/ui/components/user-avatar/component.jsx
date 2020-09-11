@@ -65,6 +65,7 @@ const UserAvatar = ({
 
     <div className={styles.content}>
       <img src={avatar} className={styles.img}></img>
+      {children}
     </div>
   </div>
 );
