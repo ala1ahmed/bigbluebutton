@@ -43,6 +43,7 @@ const propTypes = {
   isThisMeetingLocked: PropTypes.bool.isRequired,
   isMe: PropTypes.func.isRequired,
   userAriaLabel: PropTypes.string.isRequired,
+  normalizeEmojiName: PropTypes.func.isRequired,
   isActionsOpen: PropTypes.bool.isRequired,
 };
 
@@ -50,7 +51,6 @@ const ROLE_MODERATOR = Meteor.settings.public.user.role_moderator;
 
 const UserName = (props) => {
   const {
-    children,
     intl,
     compact,
     isThisMeetingLocked,
@@ -107,7 +107,12 @@ const UserName = (props) => {
           : null
       }
       <div className={styles.status}>
-        {children}
+          {
+            user.emoji !== 'none' ? (
+              <Icon iconName={normalizeEmojiName(user.emoji)}/>
+            ): null
+          }
+        
       </div>
     </div>
   );

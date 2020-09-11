@@ -526,6 +526,7 @@ class UserDropdown extends PureComponent {
       intl,
       isThisMeetingLocked,
       isMe,
+      normalizeEmojiName
     } = this.props;
 
     const {
@@ -578,8 +579,9 @@ class UserDropdown extends PureComponent {
               userAriaLabel,
               isActionsOpen,
               isMe,
+              normalizeEmojiName,
             }}
-          /><Icon iconName={normalizeEmojiName(user.emoji)}></UserName>}
+          />}
           {<UserIcons
             {...{
               user,
