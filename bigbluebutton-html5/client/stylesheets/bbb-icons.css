@@ -258,6 +258,7 @@
 }
 .icon-taderok:before {
   content: "\e94b";
+  color: white;
 }
 .icon-template_download:before {
   content: "\e94c";
