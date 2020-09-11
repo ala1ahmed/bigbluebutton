@@ -133,7 +133,7 @@
   &::before {
     content: "\e93f";
     /* ascii code for the ellipsis character */
-    font-family: 'bbb-icons' !important;
+    font-family: 'icomoon' !important;
     display: inline-block;
 
     :global(.animationsEnabled) & {
