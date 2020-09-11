@@ -237,7 +237,7 @@
   z-index: 9999;
   animation: track-progress linear 1;
   background-color: var(--color-gray-lighter);
-  border-radius: var(--border-radius);
+  border-radius: 15px;
 
   
   [dir="rtl"] & {
