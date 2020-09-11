@@ -65,7 +65,9 @@ const UserAvatar = ({
 
     <div className={styles.content}>
       <img src={avatar} className={styles.img}></img>
-      {children}
+      <div className={styles.status}>
+        {children}
+      </div>
     </div>
   </div>
 );
