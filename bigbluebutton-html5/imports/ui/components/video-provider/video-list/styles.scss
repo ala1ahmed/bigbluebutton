@@ -135,6 +135,7 @@
     /* ascii code for the ellipsis character */
     font-family: 'icomoon' !important;
     display: inline-block;
+    color: #0f70d7;
 
     :global(.animationsEnabled) & {
       animation: spin 4s infinite linear;
