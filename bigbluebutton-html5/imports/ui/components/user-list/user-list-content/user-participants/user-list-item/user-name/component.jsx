@@ -32,7 +32,6 @@ const messages = defineMessages({
 });
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
   user: PropTypes.shape({
     name: PropTypes.string.isRequired,
   }).isRequired,
@@ -58,6 +57,7 @@ const UserName = (props) => {
     isActionsOpen,
     isMe,
     user,
+    normalizeEmojiName
   } = props;
 
   if (compact) {
