@@ -155,6 +155,7 @@
   cursor: pointer;
   color: var(--color-text);
   background-color: var(--background);
+  border-radius: 20px;
   animation-duration: 0.75s;
   animation-fill-mode: both;
   max-width: var(--toast-max-width);

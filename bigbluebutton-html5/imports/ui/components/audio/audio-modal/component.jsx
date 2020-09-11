@@ -529,7 +529,6 @@ class AudioModal extends Component {
   render() {
     const {
       intl,
-      showPermissionsOvelay,
       isIOSChrome,
       closeModal,
       isIEOrEdge,
