@@ -579,7 +579,7 @@ class UserDropdown extends PureComponent {
               isActionsOpen,
               isMe,
             }}
-          />}
+          /><Icon iconName={normalizeEmojiName(user.emoji)}></UserName>}
           {<UserIcons
             {...{
               user,

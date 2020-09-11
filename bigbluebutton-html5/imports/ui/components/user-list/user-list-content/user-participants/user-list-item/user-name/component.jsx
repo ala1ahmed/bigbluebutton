@@ -32,6 +32,7 @@ const messages = defineMessages({
 });
 
 const propTypes = {
+  children: PropTypes.node.isRequired,
   user: PropTypes.shape({
     name: PropTypes.string.isRequired,
   }).isRequired,
@@ -49,6 +50,7 @@ const ROLE_MODERATOR = Meteor.settings.public.user.role_moderator;
 
 const UserName = (props) => {
   const {
+    children,
     intl,
     compact,
     isThisMeetingLocked,
@@ -105,7 +107,7 @@ const UserName = (props) => {
           : null
       }
       <div className={styles.status}>
-        test
+        {children}
       </div>
     </div>
   );
