@@ -104,6 +104,9 @@ const UserName = (props) => {
           )
           : null
       }
+      <div className={styles.status}>
+        test
+      </div>
     </div>
   );
 };
